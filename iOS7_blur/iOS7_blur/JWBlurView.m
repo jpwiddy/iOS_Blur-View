@@ -65,7 +65,7 @@
  */
 - (void) setBlurAlpha:(CGFloat)alphaValue{
     int numComponents = CGColorGetNumberOfComponents([[self backgroundColor] CGColor]);
-    if (numComponents != 4){
+    if (numComponents == 4){
         const CGFloat *components = CGColorGetComponents([[self backgroundColor] CGColor]);
         CGFloat red = components[0];
         CGFloat green = components[1];

@@ -55,8 +55,9 @@
     [self.blurView setBlurColor:[self getRandomColor]];
 }
 - (IBAction)resetDefaultButtonPressed:(id)sender {
-    [self.blurView setBlurColor:nil];
     self.alphaValueSlider.value = 0;
+    [self.blurView setBlurColor:[UIColor clearColor]];
+
 }
 - (IBAction)sliderValueChanged:(id)sender {
     [self.blurView setBlurAlpha:[[self alphaValueSlider] value]];
