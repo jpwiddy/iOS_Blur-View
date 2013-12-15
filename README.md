@@ -22,21 +22,24 @@ Creating Programmatically
 --------------
 - Create a property for that new JWBlurView (named "blurView" in this example)
 - In ViewDidLoad or ViewWillAppear :
-
+ ```
     // create a new blur view
     [self setBlurView:[JWBlurView new]];
-     // set the frame to whatever you desire
+    // set the frame to whatever you desire
     [[self blurView] setFrame:CGRectMake(0.0f,0.0f,200.0f,300.0f)];
     // optionally set the resizing mask(s)
     [[self blurView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight]; 
     // add the blur view as subview
     [self.view addSubview:[self blurView]];
-
+```
+  
 Handy Instance Functions
 --------------
+ ```
     - (void) setBlurColor:(UIColor *)blurColor; // sets overall blurred view's tint color, if opacity > 0.0
     - (void) setBlurAlpha:(CGFloat)alphaValue;  // sets the view's opacity (blurred to solid)
-  
+ ```
+
 Notes
 --------------
 - Open and free to use! I'd always appreciate a star for the repo if you use it though
