@@ -23,14 +23,10 @@ Creating Programmatically
 - Create a property for that new JWBlurView (named "blurView" in this example)
 - In ViewDidLoad or ViewWillAppear :
  ```
-    // create a new blur view
-    [self setBlurView:[JWBlurView new]];
-    // set the frame to whatever you desire
-    [[self blurView] setFrame:CGRectMake(0.0f,0.0f,200.0f,300.0f)];
-    // optionally set the resizing mask(s)
-    [[self blurView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight]; 
-    // add the blur view as subview
-    [self.view addSubview:[self blurView]];
+    [self setBlurView:[JWBlurView new]]; // create a new blur view
+    [[self blurView] setFrame:CGRectMake(0.0f,0.0f,200.0f,300.0f)]; // set the frame to whatever you desire
+    [[self blurView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight]; // optional
+    [self.view addSubview:[self blurView]]; // add the blur view as subview
 ```
   
 Handy Instance Functions
