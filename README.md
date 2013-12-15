@@ -21,20 +21,21 @@ Using Storyboards
 Creating Programmatically
 --------------
 - Create a property for that new JWBlurView (named "blurView" in this example)
-- In ViewDidLoad or ViewWillAppear :
- ```
-    [self setBlurView:[JWBlurView new]]; // create a new blur view
-    [[self blurView] setFrame:CGRectMake(0.0f,0.0f,200.0f,300.0f)]; // set the frame to whatever you desire
-    [[self blurView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight]; // optional
-    [self.view addSubview:[self blurView]]; // add the blur view as subview
+- In ViewDidLoad or ViewWillAppear
+   
+```
+[self setBlurView:[JWBlurView new]]; // create a new blur view
+[[self blurView] setFrame:CGRectMake(0.0f,0.0f,200.0f,300.0f)]; // set the frame to whatever you desire
+[[self blurView] setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight]; // optional
+[self.view addSubview:[self blurView]]; // add the blur view as subview
 ```
   
 Handy Instance Functions
 --------------
- ```
-    - (void) setBlurColor:(UIColor *)blurColor; // sets overall blurred view's tint color, if opacity > 0.0
-    - (void) setBlurAlpha:(CGFloat)alphaValue;  // sets the view's opacity (blurred to solid)
- ```
+```
+- (void) setBlurColor:(UIColor *)blurColor; // sets overall blurred view's tint color, if opacity > 0.0
+- (void) setBlurAlpha:(CGFloat)alphaValue;  // sets the view's opacity (blurred to solid)
+```
 
 Notes
 --------------
