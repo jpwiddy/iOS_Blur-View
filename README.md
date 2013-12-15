@@ -22,6 +22,7 @@ Creating Programmatically
 --------------
 - Create a property for that new JWBlurView (named "blurView" in this example)
 - In ViewDidLoad or ViewWillAppear :
+
     // create a new blur view
     [self setBlurView:[JWBlurView new]];
      // set the frame to whatever you desire
