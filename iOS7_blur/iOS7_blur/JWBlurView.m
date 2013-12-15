@@ -3,7 +3,7 @@
 //  iOS7_blur
 //
 //  Created by Jake Widmer on 12/14/13.
-//  Copyright (c) 2013 yourcompany. All rights reserved.
+//  Copyright (c) 2013 Jake Widmer. All rights reserved.
 //
 
 #import "JWBlurView.h"
@@ -15,10 +15,20 @@
 
 @implementation JWBlurView
 
+// general initializer
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self setupView];
+    }
+    return self;
+}
+
+// use with Storyboard
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self setup];
+        [self setupView];
     }
     return self;
 }
@@ -26,26 +36,24 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setup];
+        [self setupView];
     }
     return self;
 }
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        [self setup];
-    }
-    return self;
-}
 
-- (void)setup {
+- (void)setupView {
     [self setClipsToBounds:YES];
     self.backgroundColor = [UIColor clearColor];
     if (![self toolbar]) {
         [self setToolbar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
         [self.layer insertSublayer:[self.toolbar layer] atIndex:0];
     }
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self.toolbar setFrame:[self bounds]];
 }
 
 - (void) setBlurColor:(UIColor *)blurColor {
@@ -66,10 +74,4 @@
     }
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    [self.toolbar setFrame:[self bounds]];
-}
-
 @end
-

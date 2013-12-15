@@ -17,8 +17,8 @@
 
 
 @interface JWViewController ()
-@property (strong, nonatomic) IBOutlet UISlider *alphaValueSlider;
 
+@property (strong, nonatomic) IBOutlet UISlider *alphaValueSlider;
 @property (strong, nonatomic) IBOutlet UIButton *randomColorButton;
 @property (strong, nonatomic) IBOutlet UIButton *resetDefaultButton;
 
