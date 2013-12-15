@@ -5,7 +5,7 @@ iOS 7's blur effect for an entire UIView. Apple created iOS 7 with all of these 
 
 Preview
 =============
-![Image1](https://raw.github.com/username/projectname/branch/path/to/img.png)
+![Image1](https://raw.github.com/jpwidmer/iOS_Blur-View/master/iOS7_blur/blur.png)
 
 Trick of the trade, and How To Use
 =============
