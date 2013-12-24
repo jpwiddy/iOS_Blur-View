@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>22666DEB-D323-4101-AA8D-0C97A6DDF7BC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS7_blur</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2C7B9FD6-9489-4BEF-95F5-DA440B127333</key>
+		<string>https://github.com/jpwidmer/iOS_Blur-View.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS7_blur/iOS7_blur.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2C7B9FD6-9489-4BEF-95F5-DA440B127333</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jpwidmer/iOS_Blur-View.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2C7B9FD6-9489-4BEF-95F5-DA440B127333</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2C7B9FD6-9489-4BEF-95F5-DA440B127333</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS_Blur-View</string>
+		</dict>
+	</array>
+</dict>
+</plist>

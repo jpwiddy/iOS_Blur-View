@@ -10,13 +10,16 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface JWBlurView ()
-@property (nonatomic, strong) UIToolbar * toolbar;
+@property (nonatomic, strong) UIToolbar * blurBar;
 @end
 
 @implementation JWBlurView
 
+
+#pragma mark - Init functions
+
 // general initializer
-- (instancetype)init {
+- (id)init {
     self = [super init];
     if (self) {
         [self setupView];
@@ -25,7 +28,7 @@
 }
 
 // use with Storyboard
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+- (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self setupView];
@@ -33,7 +36,7 @@
     return self;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame {
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         [self setupView];
@@ -45,16 +48,18 @@
 - (void)setupView {
     [self setClipsToBounds:YES];
     self.backgroundColor = [UIColor clearColor];
-    if (![self toolbar]) {
-        [self setToolbar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
-        [self.layer insertSublayer:[self.toolbar layer] atIndex:0];
+    if (![self blurBar]) {  // lazy instantiate
+        self.BlurBar = [[UIToolbar alloc] initWithFrame:[self bounds]];
+        [self.layer insertSublayer:[self.blurBar layer] atIndex:0];
     }
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self.toolbar setFrame:[self bounds]];
+    [self.blurBar setFrame:[self bounds]];
 }
+
+#pragma mark - Blur view functions
 
 - (void) setBlurColor:(UIColor *)blurColor {
     [self setBackgroundColor:blurColor];
