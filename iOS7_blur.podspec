@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "iOS7 Blur View"
+  s.name         = "iOS7_blur"
   s.version      = "1.0.0"
   s.summary      = "iOS 7's blur effect for an entire UIView"
   s.homepage     = "https://github.com/jpwidmer/iOS_Blur-View"
